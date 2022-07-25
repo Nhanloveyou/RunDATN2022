@@ -5,7 +5,7 @@ import pickle
 
 ranker = retriever.get_class('tfidf')(tfidf_path='./RunDATN2022/Pipeline/all_documents_viquad-tfidf-ngram=2-hash=16777216-tokenizer=simple.npz')
 
-with open('./documents/all_documents_viquad.pickle', 'rb') as f:
+with open('./RunDATN2022/Pipeline/documents/all_documents_viquad.pickle', 'rb') as f:
   all_docs = pickle.load(f)
 
 def tfidf_drqa(query, k=5109):
