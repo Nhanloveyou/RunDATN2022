@@ -2,8 +2,8 @@ from summarize_sbert import summarize_document
 from rules_QW import apply_rules
 from xlmr_reader import XLMR
 
-reader = XLMR(path='./RunDATN2022/Pipeline/models/XLMR_3')
-reader1 = XLMR(path='./RunDATN2022/Pipeline/models/XLMR_5')
+reader = XLMR(path='./RunDATN2022/XLMR_3')
+reader1 = XLMR(path='./RunDATN2022/XLMR_5')
 # reader2 = XLMR(path='./models/XLMR_5')
 # reader3 = XLMR(path='./models/XLMR_4')
 # reader4 = XLMR(path='./models/XLMR_5')
