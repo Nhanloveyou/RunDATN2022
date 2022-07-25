@@ -3,11 +3,9 @@ from summarize_sbert import summarize_document
 from bert_reranker import bert_rerank
 from rules_QW import apply_rules
 import pickle
-import sys
-sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
 class ViDR():
-  def __init__(self, path='./documents/all_documents_viquad.pickle'):
+  def __init__(self, path='./RunDATN2022/Pipeline/documents/all_documents_viquad.pickle'):
     with open(path, 'rb') as f:
       self.all_docs = pickle.load(f)
 

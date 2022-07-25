@@ -2,10 +2,8 @@ from drqa import retriever
 import json
 import tqdm
 import pickle
-import sys
-sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
-ranker = retriever.get_class('tfidf')(tfidf_path='./all_documents_viquad-tfidf-ngram=2-hash=16777216-tokenizer=simple.npz')
+ranker = retriever.get_class('tfidf')(tfidf_path='./RunDATN2022/Pipeline/all_documents_viquad-tfidf-ngram=2-hash=16777216-tokenizer=simple.npz')
 
 with open('./documents/all_documents_viquad.pickle', 'rb') as f:
   all_docs = pickle.load(f)

@@ -3,10 +3,8 @@ from sentence_transformers import SentenceTransformer, util
 import json
 import tqdm
 from vncorenlp import VnCoreNLP
-import sys
-sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
-annotator = VnCoreNLP("./VnCoreNLP/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx500m')
+annotator = VnCoreNLP("./RunDATN2022/Pipeline/VnCoreNLP/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx500m')
 model_sbert = SentenceTransformer('./models/model_sbert_phobertlarge_2')
 
 def word_seg(sent):

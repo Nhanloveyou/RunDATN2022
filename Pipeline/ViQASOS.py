@@ -2,10 +2,8 @@ from vidr import ViDR
 from vireader import vireader_predict
 import nltk
 nltk.download('punkt')
-import sys
-sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
-path_to_db = './documents/all_documents_viquad.pickle'
+path_to_db = './RunDATN2022/Pipeline/documents/all_documents_viquad.pickle'
 ranker = ViDR(path_to_db)
 
 def ViQAS_predict(question):
