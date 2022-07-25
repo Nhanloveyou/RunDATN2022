@@ -1,5 +1,7 @@
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer
 import numpy as np
+import sys
+sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
 class XLMR():
   def __init__(self, path='./models/vireaderplusBiLSTMAdd4-finetuned-viquad'):

@@ -1,5 +1,7 @@
 from vidr import ViDR
 from vireader import vireader_predict
+import sys
+sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
 path_to_db = './documents/all_documents_viquad.pickle'
 ranker = ViDR(path_to_db)
