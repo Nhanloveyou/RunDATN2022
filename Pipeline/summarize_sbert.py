@@ -5,7 +5,7 @@ import tqdm
 from vncorenlp import VnCoreNLP
 
 annotator = VnCoreNLP("./RunDATN2022/Pipeline/VnCoreNLP/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx500m')
-model_sbert = SentenceTransformer('./models/model_sbert_phobertlarge_2')
+model_sbert = SentenceTransformer('./RunDATN2022/Pipeline/models/model_sbert_phobertlarge_2')
 
 def word_seg(sent):
   return ' '.join([' '.join(s) for s in annotator.tokenize(sent)])
