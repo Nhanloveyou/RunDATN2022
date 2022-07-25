@@ -2,7 +2,7 @@ import json
 
 types = []
 before, after = [], []
-f = open('rules_question_words_v11.txt')
+f = open('./RunDATN2022/Pipeline/rules_question_words_v11.txt')
 for r in f.readlines():
   v = r.split('->')[0]
   if v not in before:
