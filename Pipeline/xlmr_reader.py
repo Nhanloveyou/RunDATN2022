@@ -1,10 +1,8 @@
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer
 import numpy as np
-import sys
-sys.path.insert(0,'./RunDATN2022/Pipeline/')
 
 class XLMR():
-  def __init__(self, path='./models/vireaderplusBiLSTMAdd4-finetuned-viquad'):
+  def __init__(self, path='./RunDATN2022/Pipeline/models/vireaderplusBiLSTMAdd4-finetuned-viquad'):
     self.tokenizer = AutoTokenizer.from_pretrained(path)
     self.model_question_answering = AutoModelForQuestionAnswering.from_pretrained(path)
 
